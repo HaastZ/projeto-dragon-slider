@@ -1,0 +1,151 @@
+body {
+    font-family: 'Outfit' , sans-serif;
+    background-image: url('../image/fundo-site.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.cabecalho .titulo {
+    color: #f1ecff;
+}
+
+.cabecalho .logodrag {
+    width: 75px;
+    height: 75px;
+}
+
+.dragon-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+.lista-dragoes {
+    width: 310px;
+    height: 520px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: backgroud-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg); /*para rotacionar a seta da esquerda 180 graus no eixo Y (ou seja, virada pro outro lado) */
+}
+
+.btn-seta:hover {
+    background-color: #8351fe;
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.imagem-card-1 {
+    background: url(../image/imagem-card-1.jpg) no-repeat;
+}
+
+.imagem-card-2 {
+    background: url(../image/imagem-card-5.jpg) no-repeat;
+}
+
+.imagem-card-3 {
+    background: url(../image/fundo-card-3.jpg) no-repeat;
+}
+.imagem-card-4 {
+    background: url(../image/fundo-card-2.jpg) no-repeat;
+}
+
+.imagem-card-5 {
+    background: url(../image/fundo-card-6.jpg) no-repeat;
+}
+
+.cartao .informacoes {
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .informacoes .nome {
+    color: #f1ecff;
+    font-size: 22px;
+}
+
+.cartao .informacoes .classe {
+    background-color: #333;
+    color:#f1ecff;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.cartao .container-imagem {
+    text-align: center;
+}
+
+.cartao .imagem-dragao {
+    max-width: 100%;
+    max-height: 280px;
+    padding: 20px;
+}
+
+.cartao .descricao {
+    background-color: rgba(255,255,255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.cartao .descricao .titulo {
+    background-color: #333;
+    color:#f1ecff;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.cartao .descricao .texto {
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}
+
+.cartao .informacoes .nome.pesadelo{
+    font-size: 19px;
+}
